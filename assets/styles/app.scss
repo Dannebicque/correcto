@@ -1,15 +1,55 @@
 @import '~bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;1,200&display=swap');
+:root {
+    --background-color: black;
+    --text-color-background: #E5E5E5;
+    --header-ressource: #DD5757;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #E5E5E5;
 }
 
+.sidebar {
+    position: fixed;
+    background-color: var(--background-color);
+    color: var(--text-color-background);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgb(0 0 0 / 10%);
+}
+
+.sidebar-right {
+    position: fixed;
+    background-color: var(--text-color-background);
+    color: var(--background-color);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    border-left:1px solid var(--background-color);
+    box-shadow: inset -1px 0 0 rgb(0 0 0 / 10%);
+}
 
 .form-signin {
     width: 100%;
     max-width: 330px;
     padding: 15px;
     margin: auto;
+}
+
+header.header {
+    height: 100px;
+    width: 100%;
+    margin-left:0px;
+    padding-left: 10px;
+}
+
+header.header.ressource {
+    background-color: var(--header-ressource);
 }
